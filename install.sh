@@ -40,7 +40,7 @@ echo "Restarting lldpd service..."
 sudo systemctl restart lldpd
 
 echo "Configuring lldpd to monitor all interfaces matching '*' pattern..."
-sudo lldpcli configure system interface pattern *
+sudo lldpcli configure system interface pattern '*'
 
 # Assuming the update_interface_desc.sh is in the same directory as install.sh
 # Copy the update_interface_desc.sh script to /usr/local/bin
